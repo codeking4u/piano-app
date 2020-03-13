@@ -19,7 +19,7 @@ function playNote(key){
     noteAudio.addEventListener("ended",()=>key.classList.remove('active'));
 }
 
-document.addEventListener('keypress',(e)=>{
+document.addEventListener('keydown',(e)=>{
     if(e.repeat) return;
     var whiteIndex = WHITE_KEYS.indexOf(e.key);
     var blackIndex = BLACK_KEYS.indexOf(e.key);
